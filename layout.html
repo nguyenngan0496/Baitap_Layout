@@ -4,99 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
+    <title>Facebook Layout</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            background-color: #E1E6EA;
-        }
-        #header {
-            height: 70px;
-            background-color:#415FA8;
-            color:#ffffff;
-            text-align: center;
-            
-        }
-
-        #rbar {
-            float: left;
-            display: inline;
-            width: 20%;
-            height: 500px;
-            color: #2c2c2c;
-            padding:10px;
-            text-align: center;
-            
-            border-radius: 10px;
-        }
-
-        #content {
-            float: left;
-            display: inline;
-            width: 60%;
-            height: 500px;
-            background-color: white;
-            padding: 20px;
-            
-            border-radius: 10px;
-        }
-
-        #lbar {
-            float:left;
-            width: 20%;
-            height: 500px;
-            background-color: white;
-            color:#1A3F62;
-            
-            border-radius: 10px;
-        }
-
-        
-
-        #content1 {
-            margin: 0px 10px;
-            width: 100%;
-            height: 200px;
-            background-color: white;
-
-
-        }
-
-        #content2 {
-            margin: 20px 10px;
-            width: 100%;
-            height: 200px;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <div id="header">FACEBOOK</div>
-    <div id="rbar">
-        Group 1 <br>
-        Group 2 <br>
-        Group 3 <br>
-        Group 4 <br>
-        Group 5 <br>
-        Group 6 <br>
-        Group 7 <br>
-        Group 8 <br>
-        Group 9 <br>
-        Group 10 <br>
+    <div id="header">
+        <table id="header1">
+            <tr>
+            <td><img src="./src/fbicon.png" alt="Facebook Icon" width="50px"></td>
+            <td><input type="text" style="width: 300px"></td>
+            <td>🔍</td>
+            </tr></table>
+        
+        <table id="header2"><tr>
+            <td></td>
+            <td>Name</td>
+            <td>Home</td>
+            <td>Find Friends</td>
+        </tr></table>
+
+    </div>
+    <div id="lbar" style="color: rgb(70, 70, 70)">
+        <p>📃Newsfeed</p>
+        <p>📨Messenger</p>
+        <p>💰Market Place</p>
+        <p></p>
+        <p>💁‍♀️Nhóm Facebook 1</p>
+        <p>💁Nhóm Facebook 2</p>
+        <p>💁‍♂️Nhóm Facebook 3</p>
+        <p>💁‍♀️Nhóm Facebook 4</p>
+        <p>💁Nhóm Facebook 5</p>
+        <p>📆Events</p>
+        <p>📜Pages</p>
+        <p>👥Groups</p>
+        <p>👇See more</p>
 
     </div>
 
     <div id="content">
-        <div id="content1">What's on your mind?</div>
+        <div id="content1">What's on your mind?
+            <form action="layout.html">
+                <input type="text" style="width: 100%; height:50px">
+            </form>
+
+        </div>
+
 
         <div id="content2">
-            Đây là status <br>
-            <img src="./src/stt.webp" alt="Nemophia" id="img" style="width: 300px">
+            <table><tr>
+                <td><img src="./src/avatar.png" alt="Facebook Avatar" width="50px"></td>
+                <td> <b>Nguyen Van A </b><br>
+                5 tháng 6</td>
+            </tr></table>
+            <br><img src="./src/stt.webp" alt="Nemophia" id="img" style="width: 300px">
         </div>
 
 
     </div>
-    <div id="lbar">Đây là footer</div>
+    <div id="rbar">
+        <div id="rbar1">
+            <b>Stories</b> <br>
+            <img src="./src/avatar.png" alt="User1" width="50px" style="border-radius:50px">Nguyen Van B <br>
+            <img src="./src/avatar.png" alt="User2" width="50px" style="border-radius:50px">Nguyen Van C <br>
+            <img src="./src/avatar.png" alt="User3" width="50px" style="border-radius:50px">Nguyen Van D <br>
+        </div>
+
+        <div id="rbar2">
+            <b>Your page</b>
+        </div>
+
+    </div>
 </body>
 </html>
