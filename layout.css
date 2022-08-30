@@ -58,11 +58,14 @@
             border-collapse: collapse;
         }
         
-        td {
+        td.hdfb {
             background-color: #415FA8;
             
         }
 
+        td.stt {
+            background-color: white;
+        }
         #rbar {
             float: left;
             display: inline;
